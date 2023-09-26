@@ -1,7 +1,11 @@
 // code your solution here
-function superbowlWin(record) {
-    const win = record.find(result => result.result === "W");//&& game.team === "Denver Broncos");
-   return win ? win.year : undefined;
+function superbowlWin(superbowlResults) {
+    for (const result of superbowlResults){
+        if (result.results=== "W"){
+            return result.year;
+        }
+    }
+   return undefined;
   }
   
 
